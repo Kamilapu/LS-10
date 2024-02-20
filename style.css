@@ -137,4 +137,42 @@ li {
      margin-bottom: 248px;
 }
 
-.btn__welcome {}
+.project {
+     max-width: 1400px;
+     margin-inline: auto;
+}
+
+.project__tittle {
+     color: #5C62EC;
+     text-align: center;
+     font-family: "DM Sans", sans-serif;
+     font-size: 60px;
+     font-weight: 700;
+     line-height: 130%;
+     letter-spacing: -0.5px;
+
+     margin-top: 70px;
+     margin-bottom: 60px;
+}
+
+.grid_container {
+     display: grid;
+     grid-template-columns: repeat(3, 1fr);
+     grid-template-rows: repeat(2, 1fr);
+     gap: 30px;
+}
+
+.gaming-portal {grid-area: 1 / 1 / 2 / 2;}
+.video-service {grid-area: 2 / 1 / 3 / 2;}
+.video-portal {grid-area: 1 / 2 / 2 / 3;}
+.dating-app {grid-area: 2 / 2 / 3 / 3;}
+.landing {grid-area: 1 / 3 / 2 / 4;}
+.gaming-community {grid-area: 2 / 3 / 3 / 4;}
+
+.grid_container__item > img {
+     width: 100%;
+     height: 100%;
+}
+.grid_container__item {
+    background-image: url(img/project/background.svg);
+}
