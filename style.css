@@ -24,7 +24,7 @@ li {
      background: #171718;
      text-align: center;
      margin-inline: auto;
-     margin-bottom: 248px;
+     padding-bottom: 248px;
 }
 
 .header {
@@ -55,8 +55,6 @@ li {
 .header__logo span {
      font-weight: 700;
 }
-
-.header__nav {}
 
 .header__ul {
      display: flex;
@@ -125,6 +123,7 @@ li {
 }
 
 .btn {
+     display: inline-block;
      border-radius: 5px;
      background: #5C62EC;
      color: #FFF;
@@ -134,11 +133,9 @@ li {
      line-height: 24px;
      letter-spacing: 0.15px;
      padding: 12px 28px;
-     margin-bottom: 248px;
 }
 
 .project {
-     max-width: 1400px;
      margin-inline: auto;
 }
 
@@ -156,23 +153,63 @@ li {
 }
 
 .grid_container {
+     max-width: 1170px;
+     margin-inline: auto;
      display: grid;
      grid-template-columns: repeat(3, 1fr);
      grid-template-rows: repeat(2, 1fr);
      gap: 30px;
+     margin-bottom: 70px;
 }
 
-.gaming-portal {grid-area: 1 / 1 / 2 / 2;}
-.video-service {grid-area: 2 / 1 / 3 / 2;}
-.video-portal {grid-area: 1 / 2 / 2 / 3;}
-.dating-app {grid-area: 2 / 2 / 3 / 3;}
-.landing {grid-area: 1 / 3 / 2 / 4;}
-.gaming-community {grid-area: 2 / 3 / 3 / 4;}
+/*.grid_container__item {
+     display: grid;
+     grid-template-columns: repeat(3, 1fr);
+     grid-template-rows: repeat(2, 1fr);
+     gap: 30px;
+     
+}*/
 
 .grid_container__item > img {
      width: 100%;
      height: 100%;
+     object-fit: cover;
+
+     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+     height: 349px;
+     border-radius: 10px;
 }
-.grid_container__item {
-    background-image: url(img/project/background.svg);
+
+.grid_container_tittle {
+     color: #171718;
+     font-family: "DM Sans";
+     font-size: 24px;
+     font-weight: 700;
+     line-height: 130%;
+     letter-spacing: -0.5px;
+     padding-top: 15px;
+     padding-left: 20px;
+}
+
+footer {
+     max-width: 1400px;
+     height: auto;
+     background-color: #171718;
+     margin-inline: auto;
+
+}
+
+.foter__icons {
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     gap: 30px;
+     padding-top: 60px;
+}
+
+.footer_title {
+     color: white;
+     text-align: center;
+     padding-top: 31px;
+     padding-bottom: 50px;
 }
